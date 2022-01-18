@@ -11,8 +11,14 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os # new
 import dj_database_url
-
+import sys
 from pathlib import Path
+
+sys.modules['django.utils.six.moves.urllib.parse'] = __import__('six.mover.urllib_parse', fromlist=['urlencode'])
+sys.modules['django.utils.six.moves.urllib.request'] = __import__('six.mover.urllib_request', fromlist=['urlopen'])
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
