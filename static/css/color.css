@@ -1,0 +1,270 @@
+/*_______________________________________________________
+// BASIC STYLE  //----------------------------
+_______________________________________________________*/
+/*---------- General Style ------------*/
+/*-- before all of the color,background,border-color #16d5ff --> : #1c52bc change
+background: #16d5ff; border: 1px solid #16d5ff; border-color: #16d5ff; --*/
+body, html {color: #999999;}
+/* a, a:focus, a:hover, a.active { color: #fff; } */
+
+.btn {color: #ffffff;  background: #07689F; border: 1px solid #07689F; border-color: #07689F;} /*-- before background: #16d5ff; border: 1px solid #16d5ff; border-color: #16d5ff; --*/
+.btn-2 {color: #ffffff;  background: #ff8c00; border: 1px solid #ff8c00; border-color: #ff8c00; padding: 9px 20px;} 
+.btn-3 {color: #ffffff;  background: #07689F; border: 1px solid #07689F; border-color: #07689F;} /*-- before background: #16d5ff; border: 1px solid #16d5ff; border-color: #16d5ff; --*/
+.btn:hover {color: #ffffff;}
+.btn-2:hover {color: #ffffff;}
+.btn-3:hover {color: #ffffff;}
+.btn:before{background: -webkit-radial-gradient(center, ellipse, rgb(22, 213, 255, .5) 0%, rgba(0, 0, 0, 0) 80%); background: radial-gradient(ellipse at center, rgba(7, 45, 78, 1) 0%, rgba(0, 0, 0, 0) 80%);}
+.btn-2:before{background: -webkit-radial-gradient(center, ellipse, rgb(255, 140, 0, 0.3) 0%, rgba(255, 140, 0, 0.3) 80%); background: radial-gradient(ellipse at center, rgba(255, 144, 0, 0.5) 0%, rgba(255, 144, 0, 0.1) 80%); border-radius: 50%;}
+.btn-3:before{background: -webkit-radial-gradient(center, ellipse, rgb(22, 213, 255, .5) 0%, rgba(0, 0, 0, 0) 80%); background: radial-gradient(ellipse at center, rgba(7, 45, 78, 1) 0%, rgba(0, 0, 0, 0) 80%);}
+.owl-dot{background: #999999 !important;}
+.owl-dot.active {background: #07689F !important;}
+.coin-progress span {color: #000;}
+
+/* #preloader{background: url(../images/BDC-loader.svg) center no-repeat #fff;} */
+
+.form-control, .form-control:focus{background: #f0f0f0; color: #111111;}
+.form-control::-webkit-input-placeholder {color: #999999;}
+.form-control::-moz-placeholder {color: #999999;}
+.form-control:-ms-input-placeholder {color: #999999;}
+.form-control:-moz-placeholder {color: #999999;}
+.heading-title, .heading-title-2, .sub-banner-title{color: #111111; }
+.sub-heading, .heading-title-2 span, .sub-heading-2, .sub-page-banner ul li a:hover {color: #07689F;}
+.heading-des, .sub-page-banner ul li a{color: #999999;}
+.lightsky{background-color: #ebf4fc;}
+.lightskyblue, .sub-page-banner{background-color: #f2f8fe;}
+.grey{color: #999999 !important;}
+.top-scroll {background: #07689F; color: #fff;}
+.top-scroll:hover {opacity: 0.6;}
+.top-scroll a{color: #fff;}
+
+/*----- Menu -----*/
+.menu ul li a, .mega-menu:before{color: #888888;}
+.menu ul li a, .mega-menu::after{color: #07689F;}
+.menu ul li a:before{background: #07689F;}
+header.fixed{background: #fff; box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.2);}
+.opener:before, .opener:after, header.fixed .menu-toggle span, header.fixed .menu-toggle span:before, header.fixed .menu-toggle span:after{background: #07689F;}
+.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after{background: #07689F;}
+.menu-toggle.active span{background: transparent;}
+
+/*----- Home Banner -----*/
+.banner-heading{color: #111111; }
+.banner-heading span{color: #07689F;}
+.banner-des{color: #888888;}
+
+/*----- Work Section -----*/
+.work-des, ul.check-list li p, .work-process-title{color: #111111;}
+ul.check-list li span{background: #07689F; color: #fff;}
+
+/*----- Feature Section -----*/
+.feature-title:hover {color: #07689F;}
+.feature-box:hover path.hover {fill: #07689F;}
+
+/*----- Timeline Section -----*/
+.h-border, .v-row{border-color: #c5c8cb;}
+.small-round{border-color: #07689F; background: #f2f8fe;}
+.v-row:before{background: #07689F;}
+.small-round span{background: #07689F;}
+.date-title{color: #07689F;}
+.roadmap-detail-box{color: #111111;}
+
+/*----- Team Section -----*/
+.team-img{border-color: #07689F;}
+.team-box:hover .team-img {border-color: #999999;}
+.member-name, .team-box ul li a:hover{color: #07689F;}
+.member-name:hover{color: #111111;}
+.member-des, .team-box ul li a{color: #999999;}
+
+/*----- Token Sale Section -----*/
+.token-graphic-detail ul li:before{background: #f85d77;}
+.token-graphic-detail ul li.color-code-2:before{background: #5ad6f8;}
+.token-graphic-detail ul li.color-code-3:before{background: #f8c04e;}
+.token-graphic-detail ul li.color-code-4:before{background: #ac56f7;}
+.token-graphic-detail ul li.color-code-5:before{background: #61f89f;}
+.donut {color: #3d1f94;}
+.token-graphic-detail ul li{color: #999999;}
+
+/*----- Blog Section -----*/
+.blog-date li:before{background: #07689F;}
+.read-more:hover{color: #111111;}
+.blog-img a:before{background: rgb(0, 0, 0, 0.5);}
+.carousel-img a:before{background: rgb(0, 0, 0, 0.5);}
+.blog-date li, .blog-title:hover, .read-more{color: #07689F;}
+.ico-apps ul.check-list li p, .ico-apps-2 ul.check-list li p{color: #999999;}
+
+/*----- FAQ Section -----*/
+.Frequently-tabs li a, .qus-des{color: #999999;}
+.Frequently-tabs li a.active, .qus-title{color: #07689F;}
+.Frequently-tabs li a:before{background: #07689F;}
+
+/*----- Home Page Tow -----*/
+.banner-heading-tow, .coins-counter-loop li .coin-day, .coin-slide-text, .coin-head{color: #111111;}
+.banner-heading-tow, .coins-counter-loop-two li .coin-day, .coin-slide-text, .coin-head{color: #111111;}
+.banner-heading-tow span, .coin-start{color: #07689F;} /*-- Before color:#16d5ff; --*/
+.coin-counter{background: #FAFAFA;} /*-- Before #d7f8ff --*/
+.coins-counter-loop li:before, .coins-counter-loop li:after, .coins-progress span{background: #07689F;} /*-- Before background:#16d5ff; --*/
+.coins-counter-loop-two li:before, .coins-counter-loop-two li:after, .coins-progress span{background: #07689F;} /*-- Before background:#16d5ff; --*/
+.coins-counter-loop li span{background: #fff; color: #07689F;} /*-- Before color:#16d5ff; --*/
+.coins-counter-loop-two li span{background: #fff; color: #07689F;} /*-- Before color:#16d5ff; --*/
+.coins-progress{background: #111111;}
+
+/*----- Feature tow -----*/
+.feature-des {color: #999999;}
+.feature-title-2, .token-sale-2 .token-graphic-detail ul li{color: #111111;}
+
+/*----- Roadmap Section -----*/
+.roadmap-part .v-row, .roadmap-part .h-border, .roadmap-des {border-color: #07689F;}
+.roadmap-part .small-round {background: #f2f8fe;}
+
+/*----- team Tow Section -----*/
+.team-box-2{background: #fff;}
+.team-member-name {background: #07689F;}
+.team-member-name a{color: #fff;}
+.team-member-name a:hover{color: #111111;}
+.team-member-img {background-color: #111111;}
+.team-member-img:after{background-color: rgba(255, 255, 255, .4);}
+
+/*----- Blog Tow Section -----*/
+.blog-part-2 .read-more:hover {color: #111111;}
+.carousel-part-2 .read-more:hover {color: #111111;}
+
+
+/*----- FAQ tow Section -----*/
+.accordion-faq-box {box-shadow: 0px 0px 15px 1px rgb(0 0 0 / 0.1);}
+/* .faq-part-2 .Frequently-tabs li a, .faq-part-2 .faq-tab, {color: #999999; background: #f2f8fe;} */
+.faq-part-2 .Frequently-tabs li a{background: #f2f8fe;}
+.faq-part-2 .Frequently-tabs li a.active{background: #07689F; color: #fff;}
+.faq-part-2 .qus-des, .accordion-faq-title.active, .accordion-faq-title:hover{color: hsl(0, 0%, 7%);}
+.accordion-faq-title:before, .accordion-faq-title:after{background: #111111;}
+
+/*----- About Page -----*/
+.sub-page-banner ul li:before{background: #999999;}
+.play-icon span{border-color: #07689F; background: #fff; color: #07689F;}
+.play-icon:hover span{border-color: #fff; background: #07689F; color: #fff;}
+.work-part button.close{color: #111111;}
+.about-des{color: #888888;}
+
+/*----- blog List Page -----*/
+.blog-search input{border-color: #1c52bc; color: #111111;}
+.blog-search input::-webkit-input-placeholder, .blog-search input::-moz-placeholder, .blog-search input:-ms-input-placeholder, .blog-search input:-moz-placeholder {color: #999999;}
+.blog-search-btn:hover {background: #999999; color: #dddddd;}
+.blog-category, .blog-category ul li:before{background: #07689F;}
+.blog-tags ul li a{background: #07689F; color: #fff;}
+.blog-tags ul li a:hover{background: #f2f8fe; color: #111111;}
+.archives ul li{border-color: #e2e2e2;}
+.blog-list-content ul li:before{background: #07689F;}
+.blog-list-pagination ul li a{background: #e2e2e2; color: #999999;}
+.blog-list-pagination ul li a:hover, .blog-list-pagination ul li a.active, .blog-search-btn{background: #07689F; color: #fff;}
+.blog-category .blog-cat-title, .blog-category ul li a{color: #fff;}
+.blog-category ul li a:hover, .blog-cat-title{color: #111111;}
+.blog-category ul li:before{background: #fff;}
+.archives ul li a{color: #999999;}
+.trending-news-title:hover, .archives ul li a:hover, .blog-list-title:hover, .trending-news-date, .blog-list-content ul li{color: #07689F;}
+
+/*----- blog Detail Page -----*/
+.blog-detail-content ul li:before{background: #07689F;}
+.blog-detail-content blockquote{background: #f2f8fe; border-color: #07689F; color: #111111;}
+.blog-detail-tag ul li a, .blog-detail-social ul li a{background: #e2e2e2; color: #999999;}
+.blog-detail-tag ul li a:hover, .blog-detail-social ul li a:hover{background: #07689F; color: #fff;}
+.blog-comment-post-singel{border-color: #e2e2e2;}
+.comment-date{color: #bebebe;}
+.comment-reply{background: #07689F; color: #fff;}
+.comment-reply:hover{background: #e2e2e2; color: #999999;}
+.blog-detail-content ul li, .commenter{color: #07689F;}
+.blog-detail-content h2, .blog-detail-tag span, .blog-detail-social span, .blog-comment-heading{color: #111111;}
+
+/*----- Roadmap Page -----*/
+.roadmap-center-line, .roadmap-main-content:before{border-color: #999999;}
+.roadmap-center-line:before, .roadmap-center-line:after{background: #07689F;}
+.roadmap-animated{background: #07689F; color: #fff;}
+.roadmap-small-round{border-color: #07689F; background: #fff;}
+.roadmap-small-round:before{background: #07689F;}
+.roadmap-main .roadmap-detail-box{background: none;} /*-- Before  backgorund: #5d19db --*/
+.roadmap-main .roadmap-des{color: #111111; padding: 0; text-align: justify;}
+
+/*----- Token Sale Page -----*/
+.information-token-head{color: #07689F;}
+.token-sale-counter{background: #FAFAFA;}
+.token-sale-counter .coins-counter-loop li span{background: transparent; color: #3F72AF;}
+.token-sale-counter .coins-counter-loop li:before, .token-sale-counter .coins-counter-loop li:after{background: #fff;}
+.token-sale-counter .coins-counter-loop li .coin-day, .token-slide-info{color: #3F72AF;}
+
+.token-sale-counter .coins-counter-loop-two li span{background: transparent; color: #3F72AF;}
+.token-sale-counter .coins-counter-loop-two li:before, .token-sale-counter .coins-counter-loop-two li:after{background: #fff;}
+.token-sale-counter .coins-counter-loop-two li .coin-day, .token-slide-info{color: #3F72AF;}
+/* .token-sale-counter .coins-progress span{background: rgb(170,237,252); background: -moz-linear-gradient(left,  rgba(7, 45, 78,1) 0%, rgba(249, 249, 249, 1) 100%); background: -webkit-linear-gradient(left,  rgba(7, 45, 78,1) 0%, rgba(249, 249, 249, 1) 100%); background: linear-gradient(to right,  rgba(7, 45, 78,1) 0%, rgba(249, 249, 249, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaedfc', endColorstr='#31bcdb',GradientType=1 );} */
+.token-slide-info:before{background: #07689F;}
+.token-sale-counter .coins-progress{background: #fff;}
+.distribution-title { color: #07689F;}
+.token-sale-counter .btn{background: #07689F;}
+.token-sale-counter .btn:hover:before{background: -webkit-radial-gradient(center, ellipse, rgba(7, 45, 78, 1) 0%, rgba(0, 0, 0, 0) 80%);  background: radial-gradient(ellipse at center, rgba(7, 45, 78, 1) 0%, rgba(0, 0, 0, 0) 80%);}
+
+/*----- Contact Page -----*/
+.contact-detail li i{background: #07689F; color: #fff;}
+.contact-detail li{color: #111111;}
+
+/*----- Price Table -----*/
+
+.cnt-pricing-table {
+    border: none;
+    padding: 30px 15px;
+    margin-bottom: 40px;
+    text-align: left;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    background-color: #FFF;
+}
+
+.cnt-pricing-table .bottom-area {
+    padding-bottom: 15px 30px;
+}
+.cnt-pricing-table .price {
+    color: #07689F;
+}
+.cnt-pricing-table .price span {
+    font-weight: 700;
+    color: #000;
+}
+
+.cnt-pricing-table .top-area p {
+    font-weight: 600;
+}
+
+.cnt-pricing-table > ul > li {
+    padding-left: 41px;
+}
+
+.cnt-pricing-table > ul > li:before {
+    content: "+";
+    position: absolute;
+    left: 30px;
+}
+
+/*----- Footer Section -----*/
+.footer-icon ul li a, .subscribe .submit:hover{background: #dddddd; color: #999999;}
+.footer-icon ul li a:hover{color: #fff;}
+.footer-icon ul li a:hover{background: #07689F;}
+.footer-link ul li a:hover, .copyright ul li a:hover, .copyright p a{color: #07689F;}
+.subscribe .form-control{background: #fff; color: #111111;}
+.subscribe label, .copyright, .copyright p a:hover{color: #111111;}
+.subscribe .submit{color: #fff; background: #07689F;}
+.subscribe .form-control::-webkit-input-placeholder, .subscribe .form-control::-moz-placeholder, .subscribe .form-control:-ms-input-placeholder, .subscribe .form-control:-ms-input-placeholder, .subscribe .form-control:-moz-placeholder {color: #999999;}
+.copyright-text {color: #888888; text-align: center;}
+.copyright ul li:before{background: #999999;}
+.footer{border-color: #e3e3e3;}
+
+/*-- add class --*/
+.feature-box .feature-icon .step-items-head {font-size: 20px; color: #07689F; text-align: center; margin-bottom: 15px;}
+
+@media(min-width: 992px){
+	.menu ul li:hover a, .mega-menu:hover:before, .menu ul ul li.mega-menu:before, .menu ul ul li:hover > a{color: #1c52bc #1c52bc} 
+    .menu ul ul li a{border-color: rgb(136, 136, 136, .3) !important; color: #888888 !important;}
+	.menu ul ul{background: #fff;}
+	.menu ul ul li a:before{background: #07689F;} 
+}
+@media(max-width: 991px){
+	.menu{background: #fff !important;}
+	.menu ul li a{color: #07689F;}
+	/* .signin .btn{background: transparent;} */
+	header.fixed .menu-toggle span, header.fixed .menu-toggle span:before, 
+    header.fixed .menu-toggle span:after{background: #888888} 
+    header.fixed .menu-toggle.active span{background: transparent;}
+}

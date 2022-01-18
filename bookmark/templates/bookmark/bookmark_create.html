@@ -1,0 +1,18 @@
+{% extends 'base.html' %} <!-- extend 으로 확장해서 여기에 덮어쓰겟다 라는뜻 -->
+{% block title %}Bookmark Add{% endblock %} <!-- 타이틀 블록에 이 내용을 덮어 씌겟다고 선언 -->
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Add" class="btn btn-info btn-sm">
+    <!-- 타입 완료되는걸 알려줌 벨류 버튼이름 -->
+    <!-- 크리에이트나 업데이트뷰는 장고에서 직접만들어줌 오류메시지에
+    모델폼 믹스인이라 되있었음 그게 요것 만들어준것때문에 발생
+    as_p 나 as_table 를 넣어주면 적당히 감싸줌
+    완료버튼은 만들어줘야함 -->
+</form>
+<!-- action 은 폼에서 받은내용을 어디로 보내줄거냐는 뜻 method 는 어떤 형태로 전해줄거냐는 뜻
+장고에서는 액션은 보통 비어있음 전해받는것과 처리하는 경우가 같은화면에 있으므로
+보통 이런 화면에 접근할경우 겟 방식으로 접근하게됨 입력이 완료되면 포스트 형식으로 받게되서 그럼 그래야 서버쪽 장고에서
+받고잇는지 입력이 완료된 상태인지 구분하게됨 -->
+{% endblock %}

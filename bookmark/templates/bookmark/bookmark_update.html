@@ -1,0 +1,11 @@
+{% extends 'base.html' %} <!-- extend 으로 확장해서 여기에 덮어쓰겟다 라는뜻 -->
+{% block title %}Bookmark Add{% endblock %} <!-- 타이틀 블록에 이 내용을 덮어 씌겟다고 선언 -->
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <!-- 보안을 위한 토큰 바이러스 보호용 무조건 넣어여함 간혹 뺴야하는경우가 있음 뺴는 방법은 나중에 알려줌 -->
+        {{form.as_p}}
+        <input type="submit" value="update" class="btn btn-info btn-sm">
+    </form>
+    <!-- get 방식으로 받을수도 있으나 보안상에 문제로 post로 받는게 낫다 그리고 주소를 겟방식으로 받음으로 부딪힐수 있음 -->
+{% endblock %}

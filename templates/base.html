@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8HBW1JSRQ"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-Q8HBW1JSRQ');
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SH9MC8RJ6J"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-SH9MC8RJ6J');
+	</script>
+
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title> <!-- 어떤 다른 템플렛에서 덮어씌기 할수 있다 안에 무슨 내용이든 양 괄호안에 블록 뒤에는 맘대로지정해도됨 타이틀을 바꿀거라 타이틀이라 함 -->
+
+    <!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--  fav  -->
+
+
+    {% load static %}
+    <!--  css  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/color.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+    <!--  js  -->
+    <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/canvas.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/snap.svg-min.js' %}"></script>
+    <script src="{% static 'js/jquery.listtopie.min.js' %}"></script>
+    <script src="{% static 'js/animation.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!-- meta tag and og,twitter -->
+    <meta name="author" content="BDC">
+    <link rel="canonical" href="https://www.bdc.mn/" />
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="BDC TOKEN">
+    <meta name="description" content="BDC TOKEN - САР БҮРИЙН БИТКОЙНООР САНХҮҮГИЙН ЭРХ ЧӨЛӨӨ">
+    <meta name="keywords" content="BDC, bdc, BDC mn, bdc mn, BDCMN, bdcmn, BDC TOKEN, BDCTOKEN, bdc token, Bitfury, bitfury, token, Token, токен, Токен, BDC Token, BDC токен, Bitcoin, Биткойн, Санхүүгийн эрч чөлөө, IEO, IEO Mongolia, Монгол IEO, Mining, Олборлолт, Staking, Эм Ди Кэй Ай, MDKI, mdki">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BDC TOKEN - САР БҮРИЙН БИТКОЙНООР САНХҮҮГИЙН ЭРХ ЧӨЛӨӨ" />
+    <meta property="og:description" content="САР БҮР БИТКОЙН ХҮРТЭХ БОЛОМЖ" />
+    <meta property="og:site_name" content="BDC">
+    <meta property="og:image" content="https://i.ibb.co/44jtYFr/web-home-2-jpg.jpg">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BDC TOKEN - САР БҮРИЙН БИТКОЙНООР САНХҮҮГИЙН ЭРХ ЧӨЛӨӨ" />
+    <meta name="twitter:description" content="САР БҮР БИТКОЙН ХҮРТЭХ БОЛОМЖ" />
+    <meta property="twitter:image" content="https://i.ibb.co/DpVW3t1/web-home1-jpg.jpg">
+    <meta name="twitter:image:width" content="1024" />
+    <meta name="twitter:image:height" content="512" />
+
+	<!-- for google -->
+    <meta name="google-site-verification" content="X07SsOVhIXAlB-7mN5Z0DLNk11tBzoWj9HDPNdzeeS0" />
+
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+ 	</script>
+
+	<script>
+	var chatbox = document.getElementById('fb-customer-chat');
+	chatbox.setAttribute("page_id", "1635809549807336");
+	chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+	window.fbAsyncInit = function() {
+        FB.init({
+		xfbml            : true,
+		version          : 'v12.0'
+        });
+    };
+
+	(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+    </script>
+
+	<script>
+	$(document).ready(function(){
+	$('#myModal').modal('show');
+    });
+	</script>
+
+</head>
+<body>
+<!--     Top scroll End-->
+	<header class="transition">
+		<div class="container">
+			<div class="row flex-align">
+				<div class="col-lg-2 col-md-3 col-8">
+					<div class="logo">
+                        <a href="base.html"><img src="{% static 'images/logo-bdc.svg' %}" alt="BDC" ></a>
+					</div>
+				</div>
+				<div class="col-lg-10 col-md-9 col-4 text-right">
+					<div class="menu-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span></span>
+					</div>
+					<div class="menu">
+						<ul class="d-inline-block open_close">
+							<li class="nav-link ts-scroll"><a href="#section-about-move">About</a></li>
+							<li class="nav-link ts-scroll"><a href="#section-IEO-move">IEO</a></li>
+							<li class="nav-link ts-scroll"><a href="#section-Global-move">Global Partners</a></li>
+							<li class="nav-link ts-scroll"><a href="#section-Road-move">Roadmap</a></li>
+							<li class="nav-link ts-scroll"><a href="#section-News-move">News</a></li>
+							<li class="mega-menu">
+								<span class="opener plus"></span>
+								<a href="#">Whitepaper</a>
+								<ul class="transition">
+									<li><a href="{% static 'files/BDC_Litepaper_mon_ver01.pdf' %}" target="_blank" class="nav-link"><img src="{% static 'images/file-pdf.svg' %}" style="width: 15px; height: 15px;" alt="pdf">Litepaper</a></li>
+									<li><a href="{% static 'files/BDC_Whitepaper_Eng_ver01.pdf' %}" target="_blank" class="nav-link"><img src="{% static 'images/file-pdf.svg' %}" style="width: 15px; height: 15px;" alt="pdf">Whitepaper</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="signin d-inline-block">
+							<a href="{% url 'login' %}" target="_blank" class="btn nav-link">Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<!--     Nav end -->
+
+<!--<div class="container">-->
+<!--    <header class="header clearfix">-->
+<!--        <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--            <a class="navbar-brand" href="/">Dstagram</a>-->
+<!--            <ul class="nav">-->
+<!--                <li class="nav-item"><a href="/" class="active nav-link ">Home</a></li>-->
+<!--                {% if user.is_authenticated %}-->
+<!--                <li class="nav-item"><a href="#" class="nav-link">Welcome, {{user.get_username}}</a></li>-->
+<!--                <li class="nav-item"><a href="{% url 'photo:photo_upload' %}" class="nav-link">Upload</a></li>-->
+<!--                <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>-->
+<!--                {% else %}-->
+<!--                <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Login</a></li>-->
+<!--                <li class="nav-item"><a href="{% url 'register' %}" class="nav-link">Signup</a></li>-->
+<!--                {% endif %}-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </header>-->
+
+    {% block content %}
+
+    {% endblock %}
+<!--  	<footer class="footer">-->
+<!--        <p>&copy; 2020 Baepeu. Powered By Django 3</p>-->
+<!--    </footer>-->
+<!--</div>-->
+<!--		&lt;!&ndash; Hero-crypton &ndash;&gt;-->
+<!--		<section class="home-banner-2 flex-align" id="particle-canvas">-->
+<!--			<div class="container">-->
+<!--				<div class="row position-r z-index-2">-->
+<!--					<div class="col-md-6 flex-align wow fadeInLeft">-->
+<!--						<div class="banner-tow-content">-->
+<!--							<h1 class="banner-heading-tow">Биткойн олборлолт хийх боломж <br><span>BDC Токен</span></h1>-->
+<!--							<p class="banner-des">-->
+<!--								<a href="https://bitfury.com" style="color: darkorange; font-weight: 900;" target="_blank">Bitfury</a> болон-->
+<!--								<a href="https://mdki.mn" style="color: #07689F; font-weight: 900;" target="_blank">MDKI</a>-->
+<!--								компани нь  бага цахилгаан зарцуулан, өндөр хүчин чадал бүхий төхөөрөмжөөр “Биткойн” олборлох боломжийг-->
+<!--								<a style="color: #07689F; font-weight: 900;">BDC</a>-->
+<!--								токеноор дамжуулан хүргэж байна.   </p>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-md-6 wow fadeInRight">-->
+<!--						<div class="coin-counter">-->
+<!--&lt;!&ndash;							<label class="coin-start pb-20">Angel Round Эхлэх хүртэл</label>&ndash;&gt;-->
+<!--							<h2 class="coin-head">2догч зах зээл эхлэхэд</h2>-->
+<!--							<ul class="coins-counter-loop">-->
+<!--								<li>-->
+<!--									<span id="days">1</span>-->
+<!--									<label class="coin-day">Days</label>-->
+<!--								</li>-->
+<!--								<li>-->
+<!--									<span id="hours">08</span>-->
+<!--									<label class="coin-day">hours</label>-->
+<!--								</li>-->
+<!--								<li>-->
+<!--									<span id="minutes">24</span>-->
+<!--									<label class="coin-day">minutes</label>-->
+<!--								</li>-->
+<!--								<li>-->
+<!--									<span id="seconds">33</span>-->
+<!--									<label class="coin-day">seconds</label>-->
+<!--								</li>-->
+<!--							</ul>-->
+<!--							&lt;!&ndash; <div class="coin-slide-text">-->
+<!--								 <label class="coin-none">0 Token</label>-->
+<!--								<label class="coin-max">60,000,000 Token</label>-->
+<!--							</div> &ndash;&gt;-->
+<!--							&lt;!&ndash; <div class="coins-progress">-->
+<!--						        <span data-progress="72.90744873809524"></span>-->
+<!--						    </div> &ndash;&gt;-->
+<!--							&lt;!&ndash; <div class="progress">-->
+<!--								<div class="progress__fill"></div>-->
+<!--								<span class="progress__text">0%</span>-->
+<!--							</div> &ndash;&gt;-->
+<!--							<div class="coins-button-area" style="width: 100%; display: flex; justify-content: center;">-->
+<!--								&lt;!&ndash; <a href="https://capex.mn/launchpad" target="_blank" class="btn-3">Захиалга өгөх</a> &ndash;&gt;-->
+<!--								<a href="https://bit.ly/3yS9O5e" target="_blank" class="btn-2">Airdrop-д оролцох</a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; Hero end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; About &ndash;&gt;-->
+<!--        <section class="about-main lightskyblue ptb-hero-top" id="section-about-move">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-6 col-md-12 flex-align mb-r-30 wow fadeInLeft">-->
+<!--						<div class="work-box">-->
+<!--							<h3 class="work-process-title pb-25 about-items-p">Койн гаргагч MDKI компанийн тухай </h3>-->
+<!--							&lt;!&ndash; <p class="about-des pb-20">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p> &ndash;&gt;-->
+<!--							<p class="work-des grey">MDKI компани нь анх 2008 онд үл хөдлөх хөрөнгө, барилгын чиглэлээр үйл ажиллагаа явуулж эхэлсэн. Улмаар 2016 онд DASystem ХХК-тай Fintech, санхүүгийн чиглэлээр  хамтран ажиллаж эхэлсэнээр биткойн олборлолт, хөрөнгө оруулалт, блокчайн салбаруудад ОУ-ын түвшинд төсөл хөтөлбөрүүд амжилттай хэрэгжүүлэн ажиллаж  байна. <br> Алсын хараа: ОУ-ын хамтрагч түншүүдтэйгээ хамтран, хэрэглэгч, харилцагчдадаа аюулгүй, ил тод хөрөнгө оруулалтын платформд дэлхийн хаанаас ч оролцох   боломжийг олгож, mineral санхүүгийн шинэ эрин үеийг бий болгох юм.  </p>-->
+<!--							<a href="https://www.mdki.mn" target="_blank" class="link-of-company">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInRight">-->
+<!--						<div class="work-box">-->
+<!--							<img src="{% static 'images/about-mdki-1.jpg' %}" alt="Work Process">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        <section class="about-main lightskyblue ptb-hero-bottom">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-6 col-md-12 text-center flex-align justify-center order-r-2 wow fadeInLeft">-->
+<!--						<div class="work-box">-->
+<!--							<img src="{% static 'images/about-bitfury-2.jpg' %}" alt="Work Process">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-6 col-md-12 flex-align mb-r-30 order-r-1 wow fadeInRight">-->
+<!--						<div class="work-box">-->
+<!--							<h3 class="work-process-title pb-25">Биткойн олборлогч Bitfury компанийн тухай</h3>-->
+<!--							<p class="work-des grey about-items-p">Уг компани анх 2011 онд үүсгэн байгуулагдсан бөгөөд бага цахилгаан зарцуулан, өндөр хүчин чадлаар биткойн олборлогч Block Box үйлдвэрлэн гаргадаг. Энэ чиглэлийн ижил төстэй үйлдвэрлэгчдээсээ чанар, технологи, найдвартай байдлаараа тэргүүлэгч компани юм.-->
+<!--								<ul>-->
+<!--									<li>Онцлог талууд:</li>-->
+<!--									<li>• Нэгж Block Box Ac-ны хүчин чадал: 40 PH/S</li>-->
+<!--									<li>• Цахилгаан эрчим хүчний хэрэглээ: 1.135MW</li>-->
+<!--									<li>• Хэмжээ: 40 тоннын контайнер</li>-->
+<!--									<li>• Эд анги нэг бүрийг 24цагаар хянаж эвдрэл гарахад шууд засварлана</li>-->
+<!--									<li>• Эд анги болон Chip-ийг солих замаар шинэчлэх боломжтой</li>-->
+<!--								</ul>-->
+<!--								&lt;!&ndash; <br> <span style="color: #000;">• </span> Hash Power: 40 PH/S-->
+<!--								<br> <span style="color: #000;">• </span> Electricity Consumption: 1.135MW-->
+<!--								<br> <span style="color: #000;">• </span> Electricity Price: 3.3cent-->
+<!--								<br> <span style="color: #000;">• </span> Size: 40’ container-->
+<!--								<br> <span style="color: #000;">• </span> Performance monitoring to the level of a single component-->
+<!--								<br> <span style="color: #000;">• </span> Can be upgraded by swapping components &ndash;&gt;-->
+<!--								</p>-->
+<!--							<a href="https://www.bitfury.com" target="_blank" class="link-of-company">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; About end&ndash;&gt;-->
+
+<!--        &lt;!&ndash; Icon 3~4 item &ndash;&gt;-->
+<!--        <section class="feature-part-2 pt-100">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-4 col-md-6 mb-30 wow fadeInUp">-->
+<!--						<div class="feature-box-2">-->
+<!--							<div class="frontend">-->
+<!--								<div class="feature-icon-2">-->
+<!--									<img src="{% static 'images/Check.svg' %}" class="icon-img" alt="Safe & Secure">-->
+<!--								</div>-->
+<!--								<div class="feature-content">-->
+<!--									<h3 class="feature-title-2">Найдвартай, туршлагатай баг</h3>-->
+<!--								</div>-->
+<!--								<div class="clear"></div>-->
+<!--							</div>-->
+<!--							<div class="backend">-->
+<!--								<p>Найдвартай, туршлагатай баг</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-4 col-md-6 mb-30 wow fadeInUp">-->
+<!--						<div class="feature-box-2">-->
+<!--							<div class="frontend">-->
+<!--								<div class="feature-icon-2">-->
+<!--									<img src="{% static 'images/Chart.svg' %}" class="icon-img" alt="Early Bonus">-->
+<!--								</div>-->
+<!--								<div class="feature-content">-->
+<!--									<h3 class="feature-title-2">Дэлхийн шилдэг BTC олборлогч BlockBox AC</h3>-->
+<!--								</div>-->
+<!--								<div class="clear"></div>-->
+<!--							</div>-->
+<!--							<div class="backend">-->
+<!--								<p>Дэлхийн шилдэг BTC олборлогч BlockBox AC</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-4 col-md-6 mb-30 wow fadeInUp">-->
+<!--						<div class="feature-box-2">-->
+<!--							<div class="frontend">-->
+<!--								<div class="feature-icon-2">-->
+<!--									<img src="{% static 'images/BTC.svg' %}" class="icon-img" alt="Univarsal Access">-->
+<!--								</div>-->
+<!--								<div class="feature-content">-->
+<!--									<h3 class="feature-title-2">Урт болон богино хугацааны өгөөж</h3>-->
+<!--								</div>-->
+<!--								<div class="clear"></div>-->
+<!--							</div>-->
+<!--							<div class="backend">-->
+<!--								<p>Урт болон богино хугацааны өгөөж</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; Icon 3~4 end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; IEO &ndash;&gt;-->
+<!--        &lt;!&ndash; One &ndash;&gt;-->
+<!--        <section class="token-sele ptb-ieo-one" id="section-IEO-move">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12">-->
+<!--						<div class="section-heading text-center pb-65 wow fadeInUp">-->
+<!--							<label class="sub-heading">token</label>-->
+<!--							<h2 class="heading-title">Token sale</h2>-->
+<!--							<p class="heading-des">Тогтвортой өсөх койны эзэмшигч болж, сар бүр биткойн ногдол ашиг хүртэх бөгөөд энэ нь урт болон богино хугацаанд өгөөж хүртэх давуу талтай.</p>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-6 col-md-6 flex-align order-r-1 wow fadeInLeft">-->
+<!--						<div class="information-token w-100 mb-30">-->
+<!--							<h2 class="information-token-head">Токены тухай</h2>-->
+<!--							<ul>-->
+<!--								<li><label>Токены нэр:</label> <span>Blockchain Data Center - BDC</span></li>-->
+<!--								<li><label>Presale 1 Токены үнэ:</label> <span>70 MNT</span></li>-->
+<!--								&lt;!&ndash; <li><label>Presale 2 Токены үнэ:</label> <span>90 MNT</span></li> &ndash;&gt;-->
+<!--								<li><label>2догч зах зээлд(Listing)тавигдах үнэ:</label> <span>100 MNT</span></li>-->
+<!--								<li><label>Нийт IEO хийх токены тоо ширхэг:</label> <span>200.000.000</span></li>-->
+<!--								<li><label>Токены стандарт:</label> <span>KLAYTN</span></li>-->
+
+<!--							</ul>-->
+<!--							<div class="clear"></div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-6 col-md-6 order-r-2 wow fadeInRight">-->
+<!--						<div class="coin-counter">-->
+<!--&lt;!&ndash;							<label class="coin-start pb-20">Angel Round Эхлэх хүртэл</label>&ndash;&gt;-->
+<!--							<h2 class="coin-head">2догч зах зээл эхлэхэд</h2>-->
+<!--							<ul class="coins-counter-loop-two">-->
+<!--								<li>-->
+<!--									<span id="days2">1</span>-->
+<!--									<label class="coin-day">Days</label>-->
+<!--								</li>-->
+<!--								<li>-->
+<!--									<span id="hours2">08</span>-->
+<!--									<label class="coin-day">hours</label>-->
+<!--								</li>-->
+<!--								<li>-->
+<!--									<span id="minutes2">24</span>-->
+<!--									<label class="coin-day">minutes</label>-->
+<!--								</li>-->
+<!--								<li>-->
+<!--									<span id="seconds2">33</span>-->
+<!--									<label class="coin-day">seconds</label>-->
+<!--								</li>-->
+<!--							</ul>-->
+<!--							&lt;!&ndash; <div class="coin-slide-text">-->
+<!--								<label class="coin-none">0 Token</label>-->
+<!--								<label class="coin-max">60,000,000 Token</label>-->
+<!--							</div>-->
+<!--							<div class="coins-progress">-->
+<!--						        <span data-progress="72.90744873809524"></span>-->
+<!--						    </div> &ndash;&gt;-->
+<!--							&lt;!&ndash; <div class="progress">-->
+<!--								<div class="progress__fill"></div>-->
+<!--								<span class="progress__text">0%</span>-->
+<!--							</div> &ndash;&gt;-->
+<!--							<div class="coins-button-area" style="width: 100%; display: flex; justify-content: center">-->
+<!--								&lt;!&ndash; <a href="https://capex.mn/launchpad" target="_blank" class="btn-3">Захиалга өгөх</a> &ndash;&gt;-->
+<!--								<a href="https://bit.ly/3yS9O5e" target="_blank" class="btn-2">Airdrop-д оролцох</a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; One end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Two &ndash;&gt;-->
+<!--        <section class="work-part lightskyblue ptb-ieo-two">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-6 col-md-12 text-center flex-align justify-center wow fadeInLeft">-->
+<!--						<div class="work-box">-->
+<!--							<div class="work-box-bg"></div>-->
+<!--							<img src="{% static 'images/bdc-ico-prgoress-3.png' %}" class="rotation-img" alt="Work Process">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-6 col-md-12 flex-align wow fadeInRight">-->
+<!--						<div class="work-box">-->
+<!--							<h3 class="work-process-title pb-25">BDC Токены оцлог давуу талууд</h3>-->
+<!--							<p class="work-des pb-20">MDKI компани болон ОУ-д блокчайн технологиор тэргүүлэгчийн нэг болох BITFURY компаний хамтран “Blockchain data center” ажиллуулж байгаа юм. Канад  дахь блокчейн дата төвд хөрөнгө оруулалт хийж, сар бүр биткойн хүртэх боломжийг хэрэглэгчдэд олгож байна .-->
+<!--								BDC койн нь сар тутамд олборлолтын 30%-ийг эзэмшигчдэд (BDC HOLDER) биткойноор хувиарлан өгч, 30%-иар Блокчейн дата төвийн өргөжүүлэлт, 20%-иар нь өөрсдийн токеныг биржээс худалдан авч устгалд оруулна. Харин  20% нь “Block box  AC” төхөөрөмжийн засвар, Chip-upgrade, сайжруулалтанд зарцуулагдаж, компанийн ашиг болох юм.</p>-->
+<!--							<ul class="check-list">-->
+<!--								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Танд сар бүр биткойноор ноогдол ашиг орж ирнэ</p></li>-->
+<!--								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>“Block box AC” суурилуулалт хүртэл 1 токенд 1 сатоши биткойн ашиг орж ирнэ</p></li>-->
+<!--								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Урт болон богино хугацааны аль алинд үр өгөөжтэй</p></li>-->
+<!--								<li><span><i class="fa fa-check" aria-hidden="true"></i></span> <p>Дэлхийд хүлээн зөвшөөрөгдсөн туршлагатай хамт олон</p></li>-->
+<!--							</ul>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; Two end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Three &ndash;&gt;-->
+<!--        <section class="token-sele ptb-ieo-three">-->
+<!--			<div class="container">-->
+<!--                <div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<div class="section-heading text-center pb-65">-->
+<!--							<label class="sub-heading">Token economy</label>-->
+<!--							<h2 class="heading-title">Токен экономи болон хэш зарцуулалт</h2>-->
+<!--							<p class="heading-des">Тогтвортой өсөх токены эзэмшигч болж, сар бүр биткойн ногдол ашиг хүртэх бөгөөд энэ нь урт болон богино хугацаанд өгөөж хүртэх давуу талтай.</p>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-4 col-md-6 wow fadeInRight mb-50">-->
+<!--						<div class="token-distribut text-center">-->
+<!--							<h2 class="distribution-title" style="font-weight: 400; font-size: 20px;">Токен зарцуулалт</h2>-->
+<!--							<div class="token-graph w-100">-->
+<!--								<canvas id="myChart3" height="40vh" width="80vw"></canvas>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-4 col-md-6 wow fadeInRight mb-50">-->
+<!--						<div class="token-distribut text-center">-->
+<!--							<h2 class="distribution-title" style="font-weight: 400; font-size: 20px;">Цугларсан хөрөнгө зарцуулалт</h2>-->
+<!--							<div class="token-graph w-100">-->
+<!--								<canvas id="pieChart" height="40vh" width="80vw" ></canvas>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-lg-4 col-md-6 wow fadeInRight mb-50">-->
+<!--						<div class="token-distribut text-center">-->
+<!--							<h2 class="distribution-title" style="font-weight: 400; font-size: 20px;">Олборлосон хэш зарцуулалт</h2>-->
+<!--							<div class="token-graph w-100">-->
+<!--								<canvas id="pieChartLast" height="40vh" width="80vw" ></canvas>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; Three end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Participate &ndash;&gt;-->
+<!--        <div class="lightskyblue ptb-ieo-four">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<div class="section-heading text-center pb-65">-->
+<!--							<label class="sub-heading">Join IEO</label>-->
+<!--							<h2 class="heading-title">IEO-д оролцох хуваарь</h2>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="row">-->
+<!--					<div class="col-lg-6 col-md-6 anima mb-30">-->
+<!--                        <div class="cnt-box cnt-pricing-table">-->
+<!--                            <div class="top-area">-->
+<!--                                <h2>Presale 1</h2>-->
+<!--                                <div class="price">₮<span>70</span></div>-->
+<!--                                <p>2021.12.27~2022.01.10</p>-->
+<!--                            </div>-->
+<!--                            <ul>-->
+<!--                                <li>Нийт IEO-гоор санал болгох токены 30%</li>-->
+<!--								<li>Бирж дээр тавигдах үнээс 30% хямд авах боломжтой</li>-->
+<!--								<li>Сар бүр биткойн ногдол ашиг хүртэнэ</li>-->
+<!--								<li>Компани сар бүр бирж дээрээс тодорхой хэмжээний BDC токеныг худалдан авч, устгалд оруулж, үнийн өсөлтийг тогтвортой байлгана</li>-->
+<!--                            </ul>-->
+<!--                            <div class="bottom-area">-->
+<!--                                <a class="btn btn-border btn-xs" href="#" target="_blank">2021.12.27</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; <div class="col-lg-4 col-md-6 anima mb-30">-->
+<!--                        <div class="cnt-box cnt-pricing-table pricing-table">-->
+<!--                            <div class="top-area">-->
+<!--                                <h2>Presale 2</h2>-->
+<!--                                <div class="price">₮<span>90</span></div>-->
+<!--                                <p>2022.01.17~2022.01.23</p>-->
+<!--                            </div>-->
+<!--                            <ul>-->
+<!--								<li>Нийт IEO-гоор санал болгох токены 70%</li>-->
+<!--								<li>Бирж дээр тавигдах үнээс 10% хямд авах боломжтой</li>-->
+<!--								<li>Сар бүр биткойн ногдол ашиг хүртэнэ</li>-->
+<!--								<li>Компани сар бүр бирж дээрээс тодорхой хэмжээний BDC токеныг худалдан авч, устгалд оруулж, үнийн өсөлтийг тогтвортой байлгана</li>-->
+<!--                            </ul>-->
+<!--                            <div class="bottom-area">-->
+<!--                                <a class="btn btn-border btn-xs" href="#" target="_blank">2022.01.17</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div> &ndash;&gt;-->
+<!--                    <div class="col-lg-6 col-md-6 anima mb-30">-->
+<!--                        <div class="cnt-box cnt-pricing-table">-->
+<!--                            <div class="top-area">-->
+<!--                                <h2>Listing Exchange Price</h2>-->
+<!--                                <div class="price">₮<span>100</span></div>-->
+<!--                                <p>2022.01.14</p>-->
+<!--                            </div>-->
+<!--                            <ul>-->
+<!--								<li>Сар бүр биткойн ногдол ашиг хүртэнэ</li>-->
+<!--								<li>Компани сар бүр бирж дээрээс тодорхой хэмжээний BDC токеныг худалдан авч, устгалд оруулж, үнийн өсөлтийг тогтвортой байлгана</li>-->
+<!--                            </ul>-->
+<!--                            <div class="bottom-area">-->
+<!--                                <a class="btn btn-border btn-xs" href="#" target="_blank">2022.01.14</a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--        &lt;!&ndash; Participate end &ndash;&gt;-->
+<!--        &lt;!&ndash; IEO End&ndash;&gt;-->
+
+
+<!--        &lt;!&ndash; Global Partners &ndash;&gt;-->
+<!--        <section class="team-part skyblue bg-pattern pt-100 pb-65" id="section-Global-move">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<div class="section-heading text-center pb-65">-->
+<!--							<label class="sub-heading">Global Partners</label>-->
+<!--							<h2 class="heading-title">Глобал түншүүд</h2>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-3 pb-25 wow fadeInUp">-->
+<!--						<div class="team-box advisors text-center">-->
+<!--							<div class="team-img">-->
+<!--								<a href="https://bitfury.com/" target="_blank"><img  src="{% static 'images/glo-1.png' %}" alt="team member"></a>-->
+<!--							</div>-->
+<!--							<div class="team-des">-->
+<!--								<p class="member-des">Дэлхийн шилдэг крипто олборлолт болон блокчейн техник программ хангамж</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--                    <div class="col-md-3 pb-25 wow fadeInUp">-->
+<!--						<div class="team-box advisors text-center">-->
+<!--							<div id="team-img" class="team-img">-->
+<!--								<a href="https://hexlant.com/" target="_blank"><img src="{% static 'images/glo-5.png' %}" alt="team member"></a>-->
+<!--							</div>-->
+<!--							<div class="team-des">-->
+<!--								<p class="member-des">Программ хангамж болон custody үйлчилгээний шийдэл with Shinhan болон Nonghyup банк</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--                    <div class="col-md-3 pb-25 wow fadeInUp">-->
+<!--						<div class="team-box advisors text-center">-->
+<!--							<div class="team-img">-->
+<!--								<a href="https://delio.io/" target="_blank"><img src="{% static 'images/glo-6.png' %}" alt="team member"></a>-->
+<!--							</div>-->
+<!--							<div class="team-des">-->
+<!--								<p class="member-des">Солонгос дахь криптовалют дээр суурилсан хамгийн том зээл болон хадгаламжийн үйлчилгээ</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-md-3 pb-25 wow fadeInUp">-->
+<!--						<div class="team-box advisors text-center">-->
+<!--							<div class="team-img">-->
+<!--								<a class="partners-img" href="https://capex.mn/" target="_blank"><img src="{% static 'images/glo-capex.png' %}" alt="team member"></a>-->
+<!--							</div>-->
+<!--							<div class="team-des">-->
+<!--								<p class="member-des">Дэлхий зах зээлд нэвтрэх төвлөрсөн, дижитал хөрөнгийн бирж</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; Global Partners end &ndash;&gt;-->
+
+<!--		&lt;!&ndash; Carousel banner &ndash;&gt;-->
+<!--        <section class="blog-part ptd-blog" id="section-News-move">-->
+<!--			<div class="container">-->
+<!--				<div class="blog-slider owl-carousel">-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://www.facebook.com/Bdctoken/posts/4711296968925230" target="_blank"><img src="{% static 'images/car1.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://www.facebook.com/476752069189181/videos/4630097020401268" target="_blank"><img src="{% static 'images/car2.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://www.facebook.com/476752069189181/videos/4630097020401268" target="_blank"><img src="{% static 'images/car3.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://capex.mn/launchpad" target="_blank"><img src="{% static 'images/car4.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://capex.mn/launchpad" target="_blank"><img src="{% static 'images/car5.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; Carousel banner end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Road Map &ndash;&gt;-->
+<!--		<section class="roadmap-main ptb-road" id="section-Road-move">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<div class="section-heading text-center pb-65">-->
+<!--							<label class="sub-heading">roadmap</label>-->
+<!--							<h2 class="heading-title">Бидний замнал</h2>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-md-12">-->
+<!--						<div class="roadmap-main-graph">-->
+<!--							<div class="roadmap-center-line"></div>-->
+<!--							<div class="roadmap-chart">-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2008 он</h2>-->
+<!--											<p class="roadmap-box-detail">“MDKI LLC” байгуулагдсан &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInRight">-->
+<!--											<h2 class="roadmap-date">2020 он</h2>-->
+<!--											<p class="roadmap-box-detail">“Bitfury x MDKI” хамтын ажиллагааны гэрээ байгуулагдсан</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2020 он</h2>-->
+<!--											<p class="roadmap-box-detail">UHP токен Listing-хийж Казакстан улсад “Блокчайн олборлох дата төв”байгуулалтын үйл ажиллагаа эхэлсэн</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInRight">-->
+<!--											<h2 class="roadmap-date">2020 он</h2>-->
+<!--											<p class="roadmap-box-detail">Казакстан улс дах “Блокчайн олборлох дата төв” байгуулж 109 PH/S хүчин чадлаар биткойн олборлож эхлэв</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2021 он</h2>-->
+<!--											<p class="roadmap-box-detail">Канад улсад 160 PH/S хүчин чадал “Блокчайн олборлох дата төв” байгуулах зорилгоор IEOхийж BDC токеныг олон нийтээд санал болгов</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--                                <div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInRight">-->
+<!--											<h2 class="roadmap-date">2021.12.27 - 2022.01.10</h2>-->
+<!--											<p class="roadmap-box-detail">Presale 1 Нийт токены 30%-ийг 70₮-д</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--                                &lt;!&ndash; <div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2022.01.17 - 2022.01.23</h2>-->
+<!--											<p class="roadmap-box-detail">Presale 2 Нийт токены 70%-ийг 90₮-д &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div> &ndash;&gt;-->
+<!--                                <div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2022 он 1 сар 14</h2>-->
+<!--											<p class="roadmap-box-detail">2догч зах зээлд (Listing) тавигдана &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInRight">-->
+<!--											<h2 class="roadmap-date">2022 он 11 сар </h2>-->
+<!--											<p class="roadmap-box-detail">Канад улсад 80 PH/S хүчин чадал “Блокчайн олборлох дата төв” байгуулалтын үйл ажиллагаа эхлэв</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2022 он 2 сар</h2>-->
+<!--											<p class="roadmap-box-detail">Staking порцесоор дамжуулан сар бүр 1 BDC = 1 Satoshi олгох</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInRight">-->
+<!--											<h2 class="roadmap-date">2022 он 11 сар</h2>-->
+<!--											<p class="roadmap-box-detail">Канад улс дах “Блокчайн олборлох дата төв” байгуулж 80 PH/S хүчин чадлаар биткойн олборлож эхлэв</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--								<div class="roadmap-content-box">-->
+<!--									<div class="roadmap-main-content">-->
+<!--										<div class="roadmap-small-round"></div>-->
+<!--										<div class="roadmap-animated wow fadeInLeft">-->
+<!--											<h2 class="roadmap-date">2023 он 11 сар</h2>-->
+<!--											<p class="roadmap-box-detail" style="width: 340px;">Блокчейн дата төвийн өргөлт</p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="clear"></div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<div class="main-roadmap">-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-12">-->
+<!--									<div class="h-border wow fadeInLeft"></div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="row">-->
+<!--								<div class="col-md-12">-->
+<!--									<div class="roadmap-slider owl-carousel">-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2008 он</div>-->
+<!--													<p class="roadmap-des text-center">“MDKI LLC” байгуулагдсан</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2020 он </div>-->
+<!--													<p class="roadmap-des text-center">“Bitfury x MDKI” хамтын ажиллагааны гэрээ байгуулагдсан</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2020 он</div>-->
+<!--													<p class="roadmap-des text-center">UHP токен Listing-хийж Казакстан улсад “Блокчайн олборлох дата төв”байгуулалтын үйл ажиллагаа эхэлсэн</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2021 он</div>-->
+<!--													<p class="roadmap-des text-center">Канад улсад 160 PH/S хүчин чадал “Блокчайн олборлох дата төв” байгуулах зорилгоор IEOхийж BDC токеныг олон нийтээд санал болгов</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--                                        <div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2021.12.27 - 2022.01.10</div>-->
+<!--													<p class="roadmap-des text-center">Presale 1 Нийт токены 30%-ийг 70₮-д</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--                                        &lt;!&ndash; <div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2022.01.17 - 2022.01.23</div>-->
+<!--													<p class="roadmap-des text-center">Presale 2 Нийт токены 60%-ийг 90₮-д &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div> &ndash;&gt;-->
+<!--                                        <div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2022 он 1 сар 14</div>-->
+<!--													<p class="roadmap-des text-center">2догч зах зээлд (Listing) тавигдана</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--                                        <div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2022 он 11 сар </div>-->
+<!--													<p class="roadmap-des text-center">Канад улсад 80 PH/S хүчин чадал “Блокчайн олборлох дата төв” байгуулалтын үйл ажиллагаа эхлэв</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2022 он 2 сар</div>-->
+<!--													<p class="roadmap-des text-center">Staking порцесоор дамжуулан сар бүр 1 BDC = 1 Satoshi олгох</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2022 он 10 сар</div>-->
+<!--													<p class="roadmap-des text-center">Канад улс дах “Блокчайн олборлох дата төв” байгуулж 80 PH/S хүчин чадлаар биткойн олборлож эхлэв</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="roadmap wow fadeInLeft">-->
+<!--											<div class="roadmap-box text-center">-->
+<!--												<div class="map-graphic">-->
+<!--													<div class="small-round"><span></span></div>-->
+<!--													<div class="v-row"></div>-->
+<!--												</div>-->
+<!--												<div class="roadmap-detail-box">-->
+<!--													<div class="date-title">2023 он 10 сар</div>-->
+<!--													<p class="roadmap-des text-center">Блокчейн дата төвийн өргөлт</p>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section> &ndash;&gt;-->
+<!--        &lt;!&ndash; Road Map end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; News &ndash;&gt;-->
+<!--        <section class="blog-part ptd-blog" id="section-News-move">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<div class="section-heading text-center pb-65">-->
+<!--							<label class="sub-heading">news</label>-->
+<!--							<h2 class="heading-title">Мэдээ</h2>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="blog-slider owl-carousel">-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://ikon.mn/n/2ev9/" target="_blank"><img src="{% static 'images/icon.mn.png' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="https://ikon.mn/n/2ev9/" target="_blank" class="blog-title">Дэлхийн шилдэг Bitfury групп болон финтек салбарт туршлагатай MDKI компанийн гаргаж буй BDC token танд ямар ашигтай вэ? </a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>December 20,2021</li>-->
+<!--								<li>by ikon.mn</li>-->
+<!--							</ul>-->
+<!--							<p class="blog-des">“Эм Ди Кэй Ай” компани нь хөрөнгө оруулалт, биотехнологи, үл хөдлөх хөрөнгө, финтекийн салбарт 2008 оноос хойш... </p>-->
+<!--							<a href="https://ikon.mn/n/2ev9/" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://www.facebook.com/Bdctoken/videos/626408911937036" target="_blank"><img src="{% static 'images/news-eagle.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="https://www.facebook.com/Bdctoken/videos/626408911937036" target="_blank" class="blog-title">БОДИТ БАЙДАЛ</a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>December 22,2021</li>-->
+<!--								<li>by Eagle TV</li>-->
+<!--							</ul>-->
+<!--							<p class="blog-des">Монгол улсын Криптовалютын зах зээлийн одоогийн байдалийн талаах...</p>-->
+<!--							<a href="https://ikon.mn/n/2ev9/" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://www.facebook.com/BDCblockbox/videos/4630097020401268" target="_blank"><img src="{% static 'images/news-info.png' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="https://www.facebook.com/BDCblockbox/videos/4630097020401268" target="_blank" class="blog-title">BDC token</a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>December 27,2021</li>-->
+<!--								<li>by MDKI</li>-->
+<!--							</ul>-->
+<!--							<p class="blog-des">MDKI компанийн гаргаж буй BDC токен танд ямар ашигтай вэ?</p>-->
+<!--							<a href="https://www.facebook.com/BDCblockbox/videos/4630097020401268" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="https://news.xopom.com/390877/" target="_blank"><img src="{% static 'images/news-horom.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="https://news.xopom.com/390877/" target="_blank" class="blog-title">BDC token</a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>January 2,2022</li>-->
+<!--								<li>by Хором</li>-->
+<!--							</ul>-->
+<!--							<p class="blog-des">MDKI компанийн гаргаж буй BDC токен танд ямар ашигтай вэ?</p>-->
+<!--							<a href="https://news.xopom.com/390877/" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="blog-detail.html" target="_blank"><img src="{% static 'images/news-one.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="blog-detail.html" target="_blank" class="blog-title">Биткойн олборлолт гэж вэ? </a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>December 14,2021</li>-->
+<!--								<li>by MDKI</li>-->
+<!--							</ul>-->
+<!--							<p class="blog-des">Биткойныг олборлоход маш их хүчин чадалтай компьютер болон... </p>-->
+<!--							<a href="blog-detail.html" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="blog-detail-two.html" target="_blank"><img src="{% static 'images/news-2.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="blog-detail-two.html" target="_blank" class="blog-title">Криптогийн талаар мэдэх хэрэгтэй зүйлс</a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>December 14,2021</li>-->
+<!--								<li>by MDKI</li>-->
+<!--							</ul>-->
+<!--							<p>Блокчайн технологи дээр тулгуурлан бүтээгдсэн, цахим орчинд тоон...  </p>-->
+<!--							<a href="blog-detail-two.html" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="blog-box wow fadeInUp">-->
+<!--						<div class="blog-img mb-15">-->
+<!--							<a href="blog-detail-three.html" target="_blank"><img src="{% static 'images/news-3-min.jpg' %}" alt="blog"></a>-->
+<!--						</div>-->
+<!--						<div class="blog-des-box">-->
+<!--							<a href="blog-detail-three.html" target="_blank" class="blog-title">Биткойн гэж юу вэ?</a>-->
+<!--							<ul class="blog-date">-->
+<!--								<li>December 14,2021</li>-->
+<!--								<li>by MDKI</li>-->
+<!--							</ul>-->
+<!--							<p>Энэ бүхэн анх 2008 оны арван нэгдүгээр сарын нэгэнд өөрийгөө Satoshi Naka... </p>-->
+<!--							<a href="blog-detail-three.html" target="_blank" class="read-more">Дэлгэрэнгүй</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; News end &ndash;&gt;-->
+
+<!--        &lt;!&ndash; FAQ &ndash;&gt;-->
+<!--        <section class="faq-part-2 ptb-100" id="section-FAQ-move">-->
+<!--			<div class="container">-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12">-->
+<!--						<div class="section-heading text-center pb-65" >-->
+<!--							<h2 class="heading-title-2 pb-20"><span>Түгээмэл</span>&nbsp; асуулт хариулт</h2>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<ul class="nav nav-tabs Frequently-tabs pb-55" id="myTab" role="tablist">-->
+<!--							<li>-->
+<!--							    <a class="active" data-toggle="tab" href="#general" role="tab">Бүгд</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--							    <a data-toggle="tab" href="#ico" role="tab" >IEO</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--							    <a data-toggle="tab" href="#Tokens" role="tab">Bitcoin & Satoshi</a>-->
+<!--							</li>-->
+<!--							<li>-->
+<!--							    <a data-toggle="tab" href="#client" role="tab">Mining & NFT</a>-->
+<!--							</li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="row">-->
+<!--					<div class="col-md-12 wow fadeInUp">-->
+<!--						<div class="tab-content" id="myTabContent">-->
+<!--						  	<div class="tab-pane fade show active" id="general" role="tabpanel">-->
+<!--						  		<div class="row">-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Крипто валют гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Блокчайн технологи дээр тулгуурлан бүтээгдсэн, цахим орчинд тоон хэлбэрээр байршиж байдаг цахим вальют юм.  Мөн ямар нэг дундын зуучлагч хувь хүн, институт гэх зэрэг 3дагч гишүүнгүй байдгаараа онцлогтой. Криптог тодорхой хэмжээний лимиттэйгээр компьютер, тусгай зориулалтын төхөөрөмж ашиглан программ хангамжийн тусламжтайгаар олборлон эзэмшдэг.  Одоогоор 1200 орчим  криптовалют бүртгэгдэн ОУ-ын улсын арилжааны платформууд дээр арилжаалагдаж байна. Нийт зах зээлийн багтаамж 150 тэрбум орчим ам доллараар хэмжигдэж байгаа ба биткойн нийт зах зээлийн 48% орчмыг дангаар эзэлдэг.</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Биткойн гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Энэ бүхэн анх 2008 оны арван нэгдүгээр сарын нэгэнд өөрийгөө Satoshi Nakamoto гэж нэрлэсэн нэгэн программист нөхрөөс үүдэлтэй юм. Тэрээр анх биткойны санааг гаргаж, загварыг боловсруулж, эх кодыг бичжээ. Түүний анхны санаа нь аливаа засгийн газраас хараат бус хүн болгоны хэрэглэж болох аливаа шилжүүлэг хийхэд дундын банк эсвэл гуравдагч этгээдийг ашиглах шаардлагагүй, шимтгэл төлөхгүй (маш бага) тийм мөнгөн тэмдэгтийг бүтээхийг хүссэн гэж тайлбарлаж байгаа юм. Nakamoto-г хэн ч хараагүй, хэн ч түүнтэй ярилцаж байгаагүй, түүнийг бодит хүн гэдэгт итгэх хүн бараг байхгүй. Анх 2010 онд 10000 биткойноор пицца худалдан авч байсан бөгөөд өнөөдрийн ханшаар  650 сая доллар юм. . Нийт 21'000'000 биткойн зах зээлд гаргасан байгаа бөгөөд  2140 онд  олборлож дуусна гэж үздэг байна.  Бага хэмжээний Биткойныг хэрэглээнд millibitcoin (mBTC), microbitcoin (µBTC) мөн Satoshi гэх нэгжээр хэмжинэ.</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Bitcoin mining буюу олборлолт гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p><span style="text-decoration: italic;">Төхөөрөмжөөр олборлох:</span>  Төхөөрөмжөөр олборлох гэдэг нь тооцоолон бодох чадвартай бүхий л төхөөрөмжүүдийг хэлж буй хэлбэр. Танай гэрийн компьютер, лаптоп тэр бүү хэл таны утас ч биткойныг олборлох боломжтой. Гагцхүү маш удаан хурдаар олборлоно. Анх биткойныг ердийн суурин компьютероор олборлодог байсан бол одоо үед зөвхөн биткойн олборлоход зориулсан төхөөрөмж хүртэл бий болсон. Уг төхөөрөмж нь ердийн компьютероос хэдэн арав зуу сая дахин хурдан олборлодог. <br> <span>Үүлэн олборлолт хийх (Cloud Mining):</span>  Үүлэн олборлолт гэдэг нь төхөөрөмж авахгүйгээр биткойн олборлохыг хэлдэг. Энэ нь үүлэн олборлолтын үйлчилгээ үзүүлдэг баталгаатай вэбсайтуудаас биткойн олборлох хурд түрээсэлж авдаг ба уг хурдаараа биткойн олборлодог юм. Уг вэб сайтуудын ард маш том дата центер маягийн биткойн олборлодог төхөөрөмжүүд байгаа бөгөөд үүнийхээ тодорхой хэсгийг танд түрээслүүлж буй хэлбэр юм.</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Биткойн эзэмшилт гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Биткойныг эзэмшинэ гэдэг нь хэрэглэгч биткойнуудаа тодорхой хаягтайгаар холбогдох эрх юм. Тэгэхээр төлөгч нь заавал хувийн түлхүүрийн харгалзаатайгаар дижитал гарын үсгийг шилжүүлэгдээ хэрэглэх ёстой гэсэн үг. Хувийн түлхүүрийн ямар ч мэдлэггүй бол шилжүүлгийн гарын үсэг зурагдахгүй тул үрэгдэх боломжгүй юм. Сүлжээ нь нийтийн түлхүүрийг хэрэглэсэн гарын үсгээр баталгаажуулдаг.-->
+<!--														<br> Хэрвээ хувийн түлхүүрээ гээсэн тохиолдолд биткойны сүлжээнд ямар ч эзэмшигчийн нотолгоогүй болох бөгөөд ямар ч зохицуулах аргагүй болно, ингэснээр тухайн зооснууд нь хэрэглэх боломжгүйгээр алдагдах юм. Жишээлбэл 2013 онд нэгэн хэрэглэгч 7,500 биткойноо алдсан бөгөөд энэ тухайн үедээ 7,5 сая ам доллар гэсэн үг. Тэр залуу хувийн түлхүүрийг хадгалдаг хатуу дискээ алдсан юм.-->
+<!--													</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  			</div>-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">ICO болон IEO гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p> <span>ICO (Initial Coin Offering):</span>  ICO гэдэг нь шинээр криптовалют, цахим мөнгө гаргах, хөгжүүлэх зорилгоор олон нийтээс хөрөнгө оруулалт татах ажиллагааг хэлэх бөгөөд компанийн гаргаж буй койныг хүн бүр нээлттэй худалдан авах, солилцох боломжтой гэсэн үг. <br>-->
+<!--														<span>IEO (Initial Exchange Offering):</span> IEO гэдэг нь зөвхөн крипто биржээр л дамжуулан оролцох боломжтой, хөрөнгө босгох арга хэрэгсэл. Эзэмшигчид  мөн бирж дээрээ солилцох, арилжих боломжтойгоороо давуу талтай.-->
+<!--													</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">NFT гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Энэ нь англиар Non-Fungible-Token гэсэн үг. Fungible гэдэг нь монгол хэлнээ буулгавал орлуулшгүй гэсэн үг бол token гэдэг нь ямарваа нэгэн бараа материалыг илэрхийлэхдээ ашигладаг үг юм. Тэгэхээр Non-fungible-token гэдэг нь энгийнээр орлуулшгүй, цор ганц зүйл гэсэн утга болж байна.</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--										  <div class="accordion-faq-box mb-20">-->
+<!--											<a href="javascript:void(0)" class="accordion-faq-title">Сатоши гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Бага хэмжээний Биткойныг хэрэглээнд millibitcoin (mBTC), microbitcoin (µBTC) мөн Satoshi гэх нэгжээр хэмжинэ. Биткойны бүтээгчийг хүндэтгэн Биткойны хамгийн бага хэмжээг satoshi гэдэг ба энэ нь 0,00000001 биткойныг илэрхийлдэг</p>-->
+<!--												</div>-->
+<!--										</div>-->
+<!--						  			</div>-->
+<!--						  		</div>-->
+<!--						  	</div>-->
+<!--						  	<div class="tab-pane fade" id="ico" role="tabpanel">-->
+<!--						  		<div class="row">-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">ICO болон IEO гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p> <span>ICO (Initial Coin Offering):</span>  ICO гэдэг нь шинээр криптовалют, цахим мөнгө гаргах, хөгжүүлэх зорилгоор олон нийтээс хөрөнгө оруулалт татах ажиллагааг хэлэх бөгөөд компанийн гаргаж буй койныг хүн бүр нээлттэй худалдан авах, солилцох боломжтой гэсэн үг. <br>-->
+<!--														<span>IEO (Initial Exchange Offering):</span> IEO гэдэг нь зөвхөн крипто биржээр л дамжуулан оролцох боломжтой, хөрөнгө босгох арга хэрэгсэл. Эзэмшигчид  мөн бирж дээрээ солилцох, арилжих боломжтойгоороо давуу талтай.-->
+<!--													</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--										<div class="accordion-faq-box mb-20">-->
+<!--											<a href="javascript:void(0)" class="accordion-faq-title">Сатоши гэж юу вэ?</a>-->
+<!--											<div class="accordion-faq-content">-->
+<!--												<p>Бага хэмжээний Биткойныг хэрэглээнд millibitcoin (mBTC), microbitcoin (µBTC) мөн Satoshi гэх нэгжээр хэмжинэ. Биткойны бүтээгчийг хүндэтгэн Биткойны хамгийн бага хэмжээг satoshi гэдэг ба энэ нь 0,00000001 биткойныг илэрхийлдэг</p>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--						  			</div>-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Bitcoin mining буюу олборлолт гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p> <span>Төхөөрөмжөөр олборлох:</span>  Төхөөрөмжөөр олборлох гэдэг нь тооцоолон бодох чадвартай бүхий л төхөөрөмжүүдийг хэлж буй хэлбэр. Танай гэрийн компьютер, лаптоп тэр бүү хэл таны утас ч биткойныг олборлох боломжтой. Гагцхүү маш удаан хурдаар олборлоно. Анх биткойныг ердийн суурин компьютероор олборлодог байсан бол одоо үед зөвхөн биткойн олборлоход зориулсан төхөөрөмж хүртэл бий болсон. Уг төхөөрөмж нь ердийн компьютероос хэдэн арав зуу сая дахин хурдан олборлодог.-->
+<!--														<br> <span>Үүлэн олборлолт хийх (Cloud Mining):</span>  Үүлэн олборлолт гэдэг нь төхөөрөмж авахгүйгээр биткойн олборлохыг хэлдэг. Энэ нь үүлэн олборлолтын үйлчилгээ үзүүлдэг баталгаатай вэбсайтуудаас биткойн олборлох хурд түрээсэлж авдаг ба уг хурдаараа биткойн олборлодог юм. Уг вэб сайтуудын ард маш том дата центер маягийн биткойн олборлодог төхөөрөмжүүд байгаа бөгөөд үүнийхээ тодорхой хэсгийг танд түрээслүүлж буй хэлбэр юм.-->
+<!--													</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  			</div>-->
+<!--						  		</div>-->
+<!--						  	</div>-->
+<!--						  	<div class="tab-pane fade" id="Tokens" role="tabpanel">-->
+<!--						  		<div class="row">-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Биткойн гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Энэ бүхэн анх 2008 оны арван нэгдүгээр сарын нэгэнд өөрийгөө Satoshi Nakamoto гэж нэрлэсэн нэгэн программист нөхрөөс үүдэлтэй юм. Тэрээр анх биткойны санааг гаргаж, загварыг боловсруулж, эх кодыг бичжээ. Түүний анхны санаа нь аливаа засгийн газраас хараат бус хүн болгоны хэрэглэж болох аливаа шилжүүлэг хийхэд дундын банк эсвэл гуравдагч этгээдийг ашиглах шаардлагагүй, шимтгэл төлөхгүй (маш бага) тийм мөнгөн тэмдэгтийг бүтээхийг хүссэн гэж тайлбарлаж байгаа юм. Nakamoto-г хэн ч хараагүй, хэн ч түүнтэй ярилцаж байгаагүй, түүнийг бодит хүн гэдэгт итгэх хүн бараг байхгүй. Анх 2010 онд 10000 биткойноор пицца худалдан авч байсан бөгөөд өнөөдрийн ханшаар  650 сая доллар юм. . Нийт 21'000'000 биткойн зах зээлд гаргасан байгаа бөгөөд  2140 онд  олборлож дуусна гэж үздэг байна.  Бага хэмжээний Биткойныг хэрэглээнд millibitcoin (mBTC), microbitcoin (µBTC) мөн Satoshi гэх нэгжээр хэмжинэ.</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Сатоши гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Бага хэмжээний Биткойныг хэрэглээнд millibitcoin (mBTC), microbitcoin (µBTC) мөн Satoshi гэх нэгжээр хэмжинэ. Биткойны бүтээгчийг хүндэтгэн Биткойны хамгийн бага хэмжээг satoshi гэдэг ба энэ нь 0,00000001 биткойныг илэрхийлдэг.</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--										<div class="accordion-faq-box mb-20">-->
+<!--											<a href="javascript:void(0)" class="accordion-faq-title">Bitcoin mining буюу олборлолт гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p><span>Төхөөрөмжөөр олборлох:</span>Төхөөрөмжөөр олборлох гэдэг нь тооцоолон бодох чадвартай бүхий л төхөөрөмжүүдийг хэлж буй хэлбэр. Танай гэрийн компьютер, лаптоп тэр бүү хэл таны утас ч биткойныг олборлох боломжтой. Гагцхүү маш удаан хурдаар олборлоно. Анх биткойныг ердийн суурин компьютероор олборлодог байсан бол одоо үед зөвхөн биткойн олборлоход зориулсан төхөөрөмж хүртэл бий болсон. Уг төхөөрөмж нь ердийн компьютероос хэдэн арав зуу сая дахин хурдан олборлодог.-->
+<!--													<br> <span>Үүлэн олборлолт хийх (Cloud Mining):</span>  Үүлэн олборлолт гэдэг нь төхөөрөмж авахгүйгээр биткойн олборлохыг хэлдэг. Энэ нь үүлэн олборлолтын үйлчилгээ үзүүлдэг баталгаатай вэбсайтуудаас биткойн олборлох хурд түрээсэлж авдаг ба уг хурдаараа биткойн олборлодог юм. Уг вэб сайтуудын ард маш том дата центер маягийн биткойн олборлодог төхөөрөмжүүд байгаа бөгөөд үүнийхээ тодорхой хэсгийг танд түрээслүүлж буй хэлбэр юм.-->
+<!--												</p>-->
+<!--												</div>-->
+<!--										</div>-->
+<!--						  			</div>-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--										<div class="accordion-faq-box mb-20">-->
+<!--											<a href="javascript:void(0)" class="accordion-faq-title">Крипто валют гэж юу вэ?</a>-->
+<!--											<div class="accordion-faq-content">-->
+<!--												<p>Блокчайн технологи дээр тулгуурлан бүтээгдсэн, цахим орчинд тоон хэлбэрээр байршиж байдаг цахим вальют юм.  Мөн ямар нэг дундын зуучлагч хувь хүн, институт гэх зэрэг 3дагч гишүүнгүй байдгаараа онцлогтой. Криптог тодорхой хэмжээний лимиттэйгээр компьютер, тусгай зориулалтын төхөөрөмж ашиглан программ хангамжийн тусламжтайгаар олборлон эзэмшдэг.  Одоогоор 1200 орчим  криптовалют бүртгэгдэн ОУ-ын улсын арилжааны платформууд дээр арилжаалагдаж байна. Нийт зах зээлийн багтаамж 150 тэрбум орчим ам доллараар хэмжигдэж байгаа ба биткойн нийт зах зээлийн 48% орчмыг дангаар эзэлдэг.</p>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Биткойн эзэмшилт гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p>Биткойныг эзэмшинэ гэдэг нь хэрэглэгч биткойнуудаа тодорхой хаягтайгаар холбогдох эрх юм. Тэгэхээр төлөгч нь заавал хувийн түлхүүрийн харгалзаатайгаар дижитал гарын үсгийг шилжүүлэгдээ хэрэглэх ёстой гэсэн үг. Хувийн түлхүүрийн ямар ч мэдлэггүй бол шилжүүлгийн гарын үсэг зурагдахгүй тул үрэгдэх боломжгүй юм. Сүлжээ нь нийтийн түлхүүрийг хэрэглэсэн гарын үсгээр баталгаажуулдаг.-->
+<!--														<br> Хэрвээ хувийн түлхүүрээ гээсэн тохиолдолд биткойны сүлжээнд ямар ч эзэмшигчийн нотолгоогүй болох бөгөөд ямар ч зохицуулах аргагүй болно, ингэснээр тухайн зооснууд нь хэрэглэх боломжгүйгээр алдагдах юм. Жишээлбэл 2013 онд нэгэн хэрэглэгч 7,500 биткойноо алдсан бөгөөд энэ тухайн үедээ 7,5 сая ам доллар гэсэн үг. Тэр залуу хувийн түлхүүрийг хадгалдаг хатуу дискээ алдсан юм.-->
+<!--													</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  			</div>-->
+<!--						  		</div>-->
+<!--						  	</div>-->
+<!--						  	<div class="tab-pane fade" id="client" role="tabpanel">-->
+<!--						  		<div class="row">-->
+<!--						  			<div class="col-lg-6 col-md-12">-->
+<!--						  				<div class="accordion-faq-box mb-20">-->
+<!--						  					<a href="javascript:void(0)" class="accordion-faq-title">Bitcoin mining буюу олборлолт гэж юу вэ?</a>-->
+<!--												<div class="accordion-faq-content">-->
+<!--													<p><span>Төхөөрөмжөөр олборлох:</span>Төхөөрөмжөөр олборлох гэдэг нь тооцоолон бодох чадвартай бүхий л төхөөрөмжүүдийг хэлж буй хэлбэр. Танай гэрийн компьютер, лаптоп тэр бүү хэл таны утас ч биткойныг олборлох боломжтой. Гагцхүү маш удаан хурдаар олборлоно. Анх биткойныг ердийн суурин компьютероор олборлодог байсан бол одоо үед зөвхөн биткойн олборлоход зориулсан төхөөрөмж хүртэл бий болсон. Уг төхөөрөмж нь ердийн компьютероос хэдэн арав зуу сая дахин хурдан олборлодог.-->
+<!--														<br> <span>Үүлэн олборлолт хийх (Cloud Mining):</span>  Үүлэн олборлолт гэдэг нь төхөөрөмж авахгүйгээр биткойн олборлохыг хэлдэг. Энэ нь үүлэн олборлолтын үйлчилгээ үзүүлдэг баталгаатай вэбсайтуудаас биткойн олборлох хурд түрээсэлж авдаг ба уг хурдаараа биткойн олборлодог юм. Уг вэб сайтуудын ард маш том дата центер маягийн биткойн олборлодог төхөөрөмжүүд байгаа бөгөөд үүнийхээ тодорхой хэсгийг танд түрээслүүлж буй хэлбэр юм.-->
+<!--													</p>-->
+<!--												</div>-->
+<!--						  				</div>-->
+<!--						  			</div>-->
+<!--									  <div class="col-lg-6 col-md-12">-->
+<!--										<div class="accordion-faq-box mb-20">-->
+<!--											<a href="javascript:void(0)" class="accordion-faq-title">NFT гэж юу вэ?</a>-->
+<!--											<div class="accordion-faq-content">-->
+<!--												<p>Энэ нь англиар Non-Fungible-Token гэсэн үг. Fungible гэдэг нь монгол хэлнээ буулгавал орлуулшгүй гэсэн үг бол token гэдэг нь ямарваа нэгэн бараа материалыг илэрхийлэхдээ ашигладаг үг юм. Тэгэхээр Non-fungible-token гэдэг нь энгийнээр орлуулшгүй, цор ганц зүйл гэсэн утга болж байна.</p>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--						  		</div>-->
+<!--						  	</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
+<!--        &lt;!&ndash; FAQ end &ndash;&gt;-->
+
+     Footer
+    <footer class="bg-pattern lightskyblue ptb-100" id="section-foot-move">
+        <div class="container">
+            <div class="footer">
+                <div class="row text-center align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-logo pb-25">
+                        <a href="index.html"><img src="{% static 'images/logo-bdc.svg' %}" alt="BDC"></a>
+                        </div>
+                        <div class="footer-icon">
+                            <ul>
+                                <li><a href="https://www.facebook.com/BDCblockbox" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://bit.ly/3p2wQTy" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/bdc_token/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://t.me/bdctoken_official" target="_blank"><i class="fa fa-hand-stop-o" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-link">
+                            <ul>
+                                <li><a href="#section-IEO-move">What is BDC</a></li>
+                                <li><a href="#section-IEO-move">IEO</a></li>
+                                <li><a href="https://bit.ly/3yS9O5e" target="_blank">Join Us</a></li>
+                                <li><a href="#section-IEO-move">Tokens</a></li>
+                                <li><a href="{% static 'files/BDCLitepaper.pdf' %}" target="_blank">Lightpaper</a></li>
+                                <li><a href="#section-Global-move">Global Partners</a></li>
+                                <!-- <li><a href="#section-foot-move">Contact</a></li> -->
+                                <li><a href="#section-Road-move">Roadmap</a></li>
+                                <li><a href="{% static 'files/BDC_Whitepaper_Eng_ver01.pdf' %}" target="_blank">Whitepaper</a></li>
+                                <li><a href="#section-FAQ-move">Faq</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-12">
+                        <div class="subscribe">
+                            <div class="form-group">
+                                <label>Subscribe to our Newsleter</label>
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <input type="submit" name="submit" value="Subscribe" class="submit">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 copyright-text">
+                        <p>©2021 MDKI LLC | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+</body>
+</html>
+<!--  레이아웃 템플렛 만들었다고 하위 템플렛이 적용되는것은 아님 확장해줘야함 -->

@@ -1,0 +1,6 @@
+{% extends 'base.html' %} <!-- extend 으로 확장해서 여기에 덮어쓰겟다 라는뜻 -->
+{% block title %}Detail{% endblock %} <!-- 타이틀 블록에 이 내용을 덮어 씌겟다고 선언 -->
+{% block content %}
+{{object.site_name}} <br/>
+{{object.url}}
+{% endblock %}

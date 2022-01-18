@@ -1,0 +1,36 @@
+{% extends 'base.html' %} <!-- extend 으로 확장해서 여기에 덮어쓰겟다 라는뜻 -->
+{% block title %}Home{% endblock %} <!-- 타이틀 블록에 이 내용을 덮어 씌겟다고 선언 -->
+{% block content %}
+<!-- Hero-crypton -->
+
+<div class="btn-group">
+    <a href="{% url 'add' %}" class="btn btn-info">Add Bookmark</a>
+    <!-- urls.py 에 만들걸 템플렛에 쓰러면 이렇게 하면됨 -->
+</div>
+<p></p>
+<table class="tabel">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Site</th>
+            <th scope="col">URL</th>
+            <th scope="col">Modify</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for bookmark in object_list %}
+            <!-- 괄호 퍼센트  기능태그 -->
+            <tr>
+                <td>{{ forloop.counter}}</td>
+                <!-- print 라고 생각하면됨 -->
+                <td><a href="{% url 'detail' pk=bookmark.id %}">{{bookmark.site_name}}</a></td>
+                <td><a href="{{bookmark.rul}}" target="_blank">{{bookmark.url}}</a></td>
+                <td><a href="{% url 'update' pk=bookmark.id %}" class="btn btn-success btn-sm">Modify</a></td>
+                <td><a href="{% url 'delete' pk=bookmark.id %}" class="btn btn-danger btn-sm">Delete</a></td>
+            </tr>
+        <!-- 글 상세 보기 이런거는 앞에 object를 주게됨 기억하길 -->
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
