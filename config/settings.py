@@ -14,8 +14,8 @@ import dj_database_url
 import sys
 from pathlib import Path
 
-sys.modules['django.utils.six.moves.urllib.parse'] = __import__('six.mover.urllib_parse', fromlist=['urlencode'])
-sys.modules['django.utils.six.moves.urllib.request'] = __import__('six.mover.urllib_request', fromlist=['urlopen'])
+sys.modules['django.utils.six.moves.urllib.parse'] = __import__('six.moves.urllib_parse', fromlist=['urlencode'])
+sys.modules['django.utils.six.moves.urllib.request'] = __import__('six.moves.urllib_request', fromlist=['urlopen'])
 
 
 
